@@ -1,17 +1,15 @@
-package main 
-import ("fmt")
-func main () {
-	var a = "initial"
-	fmt.Println(a)
+package main
 
+import (
+	"fmt"
+	"time"
+)
 
-	var b, c int= 1,5
-	fmt.Println(b,c)
-
-	var e int 
-	fmt.Println(e)
-
-	f := "HELLO Keyhan Kazakh"
-	fmt.Println(f)
-	
+func main() {
+	switch time.Now().Weekday() {
+	case time.Saturday, time.Sunday:
+		fmt.Println("it's the weekend .")
+	default:
+		fmt.Println("it's the weekday")
+	}
 }
