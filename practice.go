@@ -4,16 +4,14 @@ func main () {
 	var a = "initial"
 	fmt.Println(a)
 
-	var b , c int =1,3
-	fmt.Println(b,c) 
 
-	var d = true
-	fmt.Println(d)
+	var b, c int= 1,5
+	fmt.Println(b,c)
 
-	var e int
+	var e int 
 	fmt.Println(e)
 
-	f := "Apple"
+	f := "HELLO Keyhan Kazakh"
 	fmt.Println(f)
+	
 }
-
