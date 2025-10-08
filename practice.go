@@ -2,14 +2,23 @@ package main
 
 import (
 	"fmt"
-	"time"
 )
 
 func main() {
-	switch time.Now().Weekday() {
-	case time.Saturday, time.Sunday:
-		fmt.Println("it's the weekend .")
-	default:
-		fmt.Println("it's the weekday")
+
+	var a int
+	fmt.Println("write a number")
+	fmt.Scan(&a)
+	isPrime := true
+	for i := 2; i < a; i++ {
+		if a%i == 0 {
+			isPrime = false
+			break
+		}
+	}
+	if isPrime {
+		fmt.Println(a, "is a prime number")
+	} else {
+		fmt.Println(a, "is not a prime number")
 	}
 }
